@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
+    <title>Quiz Code</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
-        <h1>Code Quiz</h1>
+        <h1>Quiz Code. . . BATTLE OF THE QUIZ</h1>
         <button id="start-button">Start Quiz</button>
     </header>
     <main>
         <div id="question"></div>
         <div id="options"></div>
         <div id="timer">Time Left: <span id="time">60</span> seconds</div>
-        <form id="score-form">
+        <form id="score-form" style="display: none;">
             <label for="initials">Enter your initials:</label>
             <input type="text" id="initials" maxlength="3" required>
             <button type="submit">Save Score</button>
@@ -23,7 +23,11 @@
         <div id="game-over" style="display: none;">
             <p>Game Over! Your Score: <span id="final-score"></span></p>
         </div>
+        <section id="high-scores" style="display: none;">
+            <h2>High Scores</h2>
+            <ol id="high-scores-list"></ol>
+        </section>
     </main>
-    <script src="quiz.js"></script>
+    <script src="java.js"></script>
 </body>
 </html>
